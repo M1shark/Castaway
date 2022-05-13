@@ -1,0 +1,88 @@
+.episodes{
+    padding: 60px 0;
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media(max-width: 992px){
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        &__title{
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 79px;
+            letter-spacing: 2.88px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+    &-card{
+        margin-top: 65px;
+        &__body{
+            padding: 40px 60px 40px 40px;
+            background: #000000;
+            border-radius: 32px;
+            display: flex;
+            gap: 55px;
+            margin-bottom: 60px;
+            @media(max-width: 992px){
+                flex-wrap: wrap;
+                padding: 20px 20px 40px 20px;
+                margin-bottom: 30px;
+            }
+            &-img{
+                img{
+                    width: 100%;
+                }
+                @media(max-width: 992px){
+                    width: 100%;
+                }
+            }
+            &-info{
+                &__header{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                    margin-bottom: 48px;
+                    text-align: center;
+                    background: #191919;
+                    border-radius: 6px;
+                    max-width: 136px;
+                }
+                &__episode{
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 27px;
+                    color: #118DA8;
+                    margin-bottom: 18px;
+                }
+                &__text-1{
+                    font-weight: 400;
+                    font-size: 64px;
+                    line-height: 70px;
+                    letter-spacing: 2.56px;
+                    color: #FFFFFF;
+                    max-width: 701px;
+                    margin-bottom: 18px;
+                    @media(max-width: 592px){
+                        font-size: 35px;   
+                    }
+                }
+                &__text-2{
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 33px;
+                    color: rgba(255, 255, 255, 0.7);
+                    margin-bottom: 35px;
+                    max-width: 757px;
+                    @media(max-width: 592px){
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

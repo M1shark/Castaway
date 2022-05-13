@@ -1,0 +1,45 @@
+.reviews{
+    padding: 100px 0;
+    &-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+        @media(max-width: 992px){
+            grid-template-columns: repeat(2, 1fr);
+           justify-items: center;
+        }
+        @media(max-width: 762px){
+            grid-template-columns: repeat(2, 2fr);
+        }
+        @media(max-width: 592px){
+            grid-template-columns: repeat(1, 2fr);
+        }
+    }
+    &-card{
+        padding: 50px 60px 50px 50px;
+        max-width: 423px;
+        background: #000000;
+        border-radius: 32px;
+        @media(max-width: 762px){
+            padding: 30px 20px 35px 20px;
+        }    
+        &__star{
+            display: flex;
+            gap: 5px;
+        }
+        &__text{
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 43px;
+            color: #FFFFFF;
+            margin-top: 20px;
+        }
+        &__name{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 20px;
+        }
+    }
+}

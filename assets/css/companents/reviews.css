@@ -1,0 +1,15 @@
+.reviews {
+  padding: 100px 0;
+}
+.reviews-card__text {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #FFFFFF;
+}
+.reviews-card__name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.7);
+}

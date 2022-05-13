@@ -1,0 +1,71 @@
+.subscribe{
+    padding: 50px 0;
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        background: #000000;
+        border-radius: 32px;
+        padding: 70px 60px;
+        @media(max-width: 992px){
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px 25px;
+        }
+    }
+    &-info{
+        max-width: 431px;
+        @media(max-width: 992px){
+            margin-bottom: 50px;
+        }
+        &__header{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #118DA8;
+            @media(max-width: 992px){
+                text-align: center;
+            }
+        }
+        &__title{
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 79px;
+            letter-spacing: 2.88px;
+            color: #FFFFFF;
+            @media(max-width: 992px){
+                text-align: center;;
+                font-size: 50px;
+            }
+        }
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 522px;
+        &__input{
+            width: 100%;
+            padding: 25px 20px;
+            background: #191919;
+            border: 1px solid #191919;
+            border-radius: 6px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: rgba(255, 255, 255, 0.7);
+            width: 100%;
+        }
+        &__btn{
+            display: flex;
+            padding: 9px 15px;
+            width: 87px;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 29px;
+            color: rgba(255, 255, 255, 0.7);
+            background: #118DA8;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    }
+}
